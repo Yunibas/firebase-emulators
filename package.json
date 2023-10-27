@@ -1,0 +1,12 @@
+{
+  "name": "firebase-emulators",
+  "version": "1.0.0",
+  "license": "MIT",
+  "scripts": {
+    "export": "firebase emulators:export ./custom-exports",
+    "start:all": "firebase emulators:start --project=emulator-sandbox",
+    "start:import": "firebase emulators:start --import=./exports --project=emulator-sandbox",
+    "start:import:export": "firebase emulators:start --import=./exports --export-on-exit=./exports --project=emulator-sandbox",
+    "start:firestore": "firebase emulators:start --only firestore --project=emulator-sandbox"
+  }
+}
