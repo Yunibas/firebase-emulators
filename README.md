@@ -14,11 +14,15 @@ NOTE: The Cloud Functions emulator must be run in the project with your Function
 
 # Script Descriptions
 
-`start:all` - Runs all emulators without pre-loaded data
-`start:import` - Runs all emulators and pre-loads data from `exports` folder but does not save changes to data or files
-`start:import:export` - Runs all emulators and pre-loads data from `exports` folder plus performs a new export over the existing export when the emulators are shutdown
-`start:firestore` - Runs only the Firestore emulator. Any emulator can be run individually in this manner
-`export` - Performs a manual export from a running Firestore and Cloud Storage emulator
+- `start:all` - Runs all emulators without pre-loaded data
+
+- `start:import` - Runs all emulators and pre-loads data from `exports` folder but does not save changes to data or files
+
+- `start:import:export` - Runs all emulators and pre-loads data from `exports` folder plus performs a new export over the existing export when the emulators are shutdown
+
+- `start:firestore` - Runs only the Firestore emulator. Any emulator can be run individually in this manner
+
+- `export` - Performs a manual export from a running Firestore and Cloud Storage emulator
 
 # Authentication Emulator
 
