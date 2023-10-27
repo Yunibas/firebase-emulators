@@ -38,6 +38,7 @@ export FIREBASE_AUTH_EMULATOR_HOST="127.0.0.1:9099"
 Fish shell
 
 ```shell
+# Fish shell
 set -xg FIREBASE_AUTH_EMULATOR_HOST "127.0.0.1:9099"
 ```
 
@@ -56,9 +57,8 @@ To connect an application to the Firestore emulator requires:
 export FIRESTORE_EMULATOR_HOST="127.0.0.1:8081"
 ```
 
-Fish shell
-
 ```shell
+# Fish shell
 set -xg FIRESTORE_EMULATOR_HOST "127.0.0.1:8081"
 ```
 
@@ -87,9 +87,8 @@ To connect an application to the Cloud Storage emulator requires:
 export FIREBASE_STORAGE_EMULATOR_HOST="127.0.0.1:9199"
 ```
 
-Fish shell
-
 ```shell
+# Fish shell
 set -xg FIREBASE_STORAGE_EMULATOR_HOST "127.0.0.1:9199"
 ```
 
@@ -109,9 +108,8 @@ To connect an application to the Pub/Sub emulator requires:
 export PUBSUB_EMULATOR_HOST="127.0.0.1:8085"
 ```
 
-Fish shell
-
 ```shell
+# Fish shell
 set -xg PUBSUB_EMULATOR_HOST "127.0.0.1:8085"
 ```
 
