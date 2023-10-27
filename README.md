@@ -32,8 +32,13 @@ To connect an application to the Authentication emulator requires:
 2. Admin initialized with appropriate project
 
 ```shell
-$ export FIREBASE_AUTH_EMULATOR_HOST="127.0.0.1:9099"
-fish> set -xg FIREBASE_AUTH_EMULATOR_HOST "127.0.0.1:9099"
+export FIREBASE_AUTH_EMULATOR_HOST="127.0.0.1:9099"
+```
+
+Fish shell
+
+```shell
+set -xg FIREBASE_AUTH_EMULATOR_HOST "127.0.0.1:9099"
 ```
 
 ```js
@@ -48,8 +53,13 @@ To connect an application to the Firestore emulator requires:
 2. Admin initialized with appropriate project
 
 ```shell
-$ export FIRESTORE_EMULATOR_HOST="127.0.0.1:8081"
-fish> set -xg FIRESTORE_EMULATOR_HOST "127.0.0.1:8081"
+export FIRESTORE_EMULATOR_HOST="127.0.0.1:8081"
+```
+
+Fish shell
+
+```shell
+set -xg FIRESTORE_EMULATOR_HOST "127.0.0.1:8081"
 ```
 
 ```js
@@ -74,8 +84,13 @@ To connect an application to the Cloud Storage emulator requires:
 2. Admin initialized with appropriate project
 
 ```shell
-$ export FIREBASE_STORAGE_EMULATOR_HOST="127.0.0.1:9199"
-fish> set -xg FIREBASE_STORAGE_EMULATOR_HOST "127.0.0.1:9199"
+export FIREBASE_STORAGE_EMULATOR_HOST="127.0.0.1:9199"
+```
+
+Fish shell
+
+```shell
+set -xg FIREBASE_STORAGE_EMULATOR_HOST "127.0.0.1:9199"
 ```
 
 ```js
@@ -91,12 +106,13 @@ To connect an application to the Pub/Sub emulator requires:
 1. Environment variable assignment for PUBSUB_EMULATOR_HOST=ip:port
 
 ```shell
-$ export PUBSUB_EMULATOR_HOST="127.0.0.1:8085"
-fish> set -xg PUBSUB_EMULATOR_HOST "127.0.0.1:8085"
+export PUBSUB_EMULATOR_HOST="127.0.0.1:8085"
 ```
 
-```js
-admin.initializeApp({ projectId: 'emulator-sandbox' })
+Fish shell
+
+```shell
+set -xg PUBSUB_EMULATOR_HOST "127.0.0.1:8085"
 ```
 
 # References
