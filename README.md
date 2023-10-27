@@ -35,8 +35,6 @@ To connect an application to the Authentication emulator requires:
 export FIREBASE_AUTH_EMULATOR_HOST="127.0.0.1:9099"
 ```
 
-Fish shell
-
 ```shell
 # Fish shell
 set -xg FIREBASE_AUTH_EMULATOR_HOST "127.0.0.1:9099"
