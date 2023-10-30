@@ -22,6 +22,8 @@ NOTE: The Cloud Functions emulator must be run in the project with your Function
 
 - `start:firestore` - Runs only the Firestore emulator. Any emulator can be run individually in this manner
 
+- `start:json-server` - Runs a local JSON Server to act as db for PubSub emulator
+
 - `export` - Performs a manual export from a running Firestore and Cloud Storage emulator
 
 # Authentication Emulator
@@ -101,6 +103,7 @@ Cloud Storage rules can be edited in `storage.rules`.
 To connect an application to the Pub/Sub emulator requires:
 
 1. Environment variable assignment for PUBSUB_EMULATOR_HOST=ip:port
+2. Run start:json-server script
 
 ```shell
 export PUBSUB_EMULATOR_HOST="127.0.0.1:8085"
@@ -111,6 +114,27 @@ export PUBSUB_EMULATOR_HOST="127.0.0.1:8085"
 set -xg PUBSUB_EMULATOR_HOST "127.0.0.1:8085"
 ```
 
+```shell
+# Create a topic
+curl -s -X PUT 'http://localhost:8085/v1/projects/emulator-sandbox/topics/GenericTopic'
+
+# Create a subscription
+curl -s -X PUT 'http://localhost:8085/v1/projects/emulator-sandbox/subscriptions/GenericTopicSubscription' \
+    -H 'Content-Type: application/json' \
+    --data '{"topic":"projects/emulator-sandbox/topics/GenericTopic","pushConfig":{"pushEndpoint":"http://localhost:8080/projects/emulator-sandbox/topics/GenericTopic"}}'
+
+# Post a message
+curl -s -X POST 'http://localhost:8085/v1/projects/emulator-sandbox/topics/GenericTopic:publish' \
+    -H 'Content-Type: application/json' \
+    --data '{"messages":[{"data":"eyJmb28iOiJiYXIifQ=="}]}'
+```
+
 # References
 
 [Firebase Emulators](https://firebase.google.com/docs/emulator-suite)
+
+[Google Python PubSub](https://cloud.google.com/pubsub/docs/emulator#using_the_emulator)
+
+```
+
+```
