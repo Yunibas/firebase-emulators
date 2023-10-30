@@ -132,7 +132,3 @@ curl -s -X POST 'http://localhost:8085/v1/projects/emulator-sandbox/topics/Gener
 [Firebase Emulators](https://firebase.google.com/docs/emulator-suite)
 
 [Google Python PubSub](https://cloud.google.com/pubsub/docs/emulator#using_the_emulator)
-
-```
-
-```
