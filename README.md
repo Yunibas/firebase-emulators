@@ -22,8 +22,6 @@ NOTE: The Cloud Functions emulator must be run in the project with your Function
 
 - `start:firestore` - Runs only the Firestore emulator. Any emulator can be run individually in this manner
 
-- `start:json-server` - Runs a local JSON Server to act as db for PubSub emulator
-
 - `export` - Performs a manual export from a running Firestore and Cloud Storage emulator
 
 # Authentication Emulator

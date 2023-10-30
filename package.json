@@ -5,7 +5,6 @@
   "scripts": {
     "export": "firebase emulators:export ./custom-exports",
     "start:all": "firebase emulators:start --project=emulator-sandbox",
-    "start:json-server": "json-server --watch ./db.json --port 5000",
     "start:import": "firebase emulators:start --import=./exports --project=emulator-sandbox",
     "start:import:export": "firebase emulators:start --import=./exports --export-on-exit=./exports --project=emulator-sandbox",
     "start:firestore": "firebase emulators:start --only firestore --project=emulator-sandbox"
