@@ -8,5 +8,8 @@
     "start:import": "firebase emulators:start --import=./exports --project=emulator-sandbox",
     "start:import:export": "firebase emulators:start --import=./exports --export-on-exit=./exports --project=emulator-sandbox",
     "start:firestore": "firebase emulators:start --only firestore --project=emulator-sandbox"
+  },
+  "devDependencies": {
+    "firebase-tools": "^12.9.1"
   }
 }
