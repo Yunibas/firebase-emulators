@@ -127,6 +127,15 @@ curl -s -X POST 'http://localhost:8085/v1/projects/emulator-sandbox/topics/Gener
     --data '{"messages":[{"data":"eyJmb28iOiJiYXIifQ=="}]}'
 ```
 
+Request Passcode Message
+
+```shell
+
+curl -s -X POST 'http://localhost:8085/v1/projects/emulator-sandbox/topics/GenericTopic:publish' \
+    -H 'Content-Type: application/json' \
+    --data '{"messages":[{"data":"ewogICJlbnYiOiAiZGV2ZWxvcG1lbnQiLAogICJ0ZW5hbnRfaWQiOiAiMTkxOXVydTE5MTkxanIxIiwKICAidGltZXN0YW1wIjogIjIwMjMtMDgtMjFUMTU6MjY6MDAuMDAwWiIsCiAgInNlcnZpY2UiOiAiYXV0aC1tcyIsCiAgImFjdGlvbiI6ICJhdXRoLXJlcXVlc3QiLAogICJwcm9jZXNzIjogInJlcXVlc3QtcGFzc2NvZGUiLAogICJhY3Rvcl9yZWYiOiB7CiAgICAiY29sbGVjdGlvbiI6ICJhY2NvdW50cyIsCiAgICAiaWQiOiAiMTkxOTE5MTkxOTExOSIKICB9LAogICJ0YXJnZXRfcmVmIjogewogICAgImNvbGxlY3Rpb24iOiAiYWNjb3VudHMiLAogICAgImlkIjogIjE5MTkxOTE5MTkxMTkiCiAgfSwgICJzdWNjZXNzIjogdHJ1ZSwKICAiYXV4aWxpYXJ5IjogewogICAgIm1ldGhvZCI6ICJlbWFpbCIsCiAgICAiaWRlbnRpZmllciI6ICJ0cm95QHl1bmliYXMuY29tIgogIH0KfQ=="}]}'
+```
+
 # References
 
 [Firebase Emulators](https://firebase.google.com/docs/emulator-suite)
